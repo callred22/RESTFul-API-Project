@@ -5,9 +5,17 @@
 
 ## GET
 User sends blank get request to api and receives average totals per state (medicare/zipcodes & covid/zipcodes) as JSON
+User can get user data (nothing private)
+User can get all medicare data
+User can get all Covid data
+
+ - URLs
+ - - /v1/medicare
+ - - /v1/covid
+ - - /v1/user/all
 
 
-## POST (user-specific)
+## PUT (user-specific)
 User sends PUT request to API with the following parameters:
  - user (pincode for a user(unique))
  - state
@@ -15,11 +23,18 @@ User sends PUT request to API with the following parameters:
 
 The user gets saved into the database with the state and zipcode, after which they can pull the information with a GET request to get their specific information as shown below:
 
+ - URLs
+ - - /v1/user?user=*userpincode*&state=*updatedstate*&zip=*updatedzip*
+ Just change the state and zip arguments to whatever needs to be saved, you do have to include both state and zip.
+
 ## GET (user-specific)
 User sends GET request to api with the following parameters:
  - user (pincode for user (already created in POST request))
 
 The user will receive information partaining to their originally created state and zipcode
+
+ - URLs
+ - - /v1/user?user=*userpincode*
 
 ## PATCH (user-specific)
 User sends PATCH request to api with the following parameters:
@@ -27,4 +42,14 @@ User sends PATCH request to api with the following parameters:
  - state (optional)
  - zip (optional)
 
-Even though these are optional, one will have to be used or it will send back a 500 response (missing information)
+Even though these are optional, one will have to be used or it will send back a 400 response (bad request / missing information)
+
+ - URLs
+ - - /v1/user?user=*userpincode*&state=*updatedstate*&zip=*updatedzip*
+
+## DELETE (user-specific)
+You can also delete a user using the following parameters: 
+ - user (pincode for a user(unique))
+
+ - URLs
+ - - /v1/user?user=*userpincode*
