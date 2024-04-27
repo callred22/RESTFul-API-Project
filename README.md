@@ -1,7 +1,13 @@
-# What this does
+# RESTFul API Project 
+## Submission by Criosanna Allred 
+## U762 Spring 2024 University of South Carolina Upstate 
+
+## Video presentation can be accessed via the file above or directly through this link to [YouTube][1]
+[1]: https://youtu.be/9oioFLb4lWc "YouTube"
+
+# What this API does: 
 
 ## CHECK TO SEE IF database is filled, if not then it pre-fills data from apis into local database
-
 
 ## GET
 User sends blank get request to api and receives average totals per state (medicare/zipcodes & covid/zipcodes) as JSON
