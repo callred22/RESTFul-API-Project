@@ -10,10 +10,10 @@ The video presentation for this project can be accessed via the file above or di
 ## The first step is check to see if the database is filled. If not, then it pre-fills data from APIs into local database. 
 
 ## GET Request 
-User sends blank get request to api and receives average totals per state (medicare/zipcodes & covid/zipcodes) as JSON
-User can get user data (nothing private)
-User can get all medicare data
-User can get all Covid data
+User sends blank get request to api and receives average totals per state (medicare/zipcodes & covid/zipcodes) as JSON. 
+User can get user data (nothing private). 
+User can get all medicare data. 
+User can get all Covid data. 
 
  - URLs
  - - /v1/medicare
