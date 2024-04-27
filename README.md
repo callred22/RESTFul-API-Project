@@ -16,9 +16,9 @@ User can get all medicare data
 User can get all Covid data
 
  - URLs
-  - /v1/medicare
-  - /v1/covid
-  - /v1/user/all
+ - - /v1/medicare
+ - - /v1/covid
+ - - /v1/user/all
 
 
 ## PUT Request (user-specific)
