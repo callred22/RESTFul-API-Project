@@ -12,8 +12,8 @@ The video presentation for this project can be accessed via the file above or di
 ## GET Request 
 User sends blank get request to api and receives average totals per state (medicare/zipcodes & covid/zipcodes) as JSON. 
 User can get user data (nothing private). 
-User can get all medicare data. 
-User can get all Covid data. 
+User can get all Medicare enrollments data by state. 
+User can get all COVID-19 hospitalizations data by state. 
 
  - URLs
  - - /v1/medicare
